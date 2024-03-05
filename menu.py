@@ -174,19 +174,8 @@ while place_order:
             print("Invalid input. Please enter 'Y' or 'N'.")
 
         # 5. Check the customer's input
-
-                # Keep ordering
-
-                # Exit the keep ordering question loop
-
-                # Complete the order
-
-                # Since the customer decided to stop ordering, thank them for
-                # their order
-
-                # Exit the keep ordering question loop
-
-                # Tell the customer to try again
+            
+print("--------------------------------------------")
 
 print("Thank you for ordering with us!")
 # Print out the customer's order
@@ -209,10 +198,10 @@ for item in order_list:
     print(f"{item_name:<25s}|{price:>8.2f}|{quantity:>8d}")
 
     # 7. Store the dictionary items as variables
-# for item in order_list:
-#     item_name = item["Item name"]
-#     price = item["Price"]
-#     quantity = item["Quantity"]
+for item in order_list:
+    item_name = item["Item name"]
+    price = item["Price"]
+    quantity = item["Quantity"]
 
     # 8. Calculate the number of spaces for formatted printing
     num_item_spaces = 25 - len(item_name)
@@ -230,7 +219,3 @@ order_costs = [item["Price"] * item["Quantity"] for item in order_list]
 total_cost = sum(order_costs)
 # and print the prices.
 print(f"\nTotal cost: ${total_cost:.2f}")
-    # item_cost = price * quantity
-    # total_cost = item_cost
-
-    # print(f"\nTotal cost: ${total_cost:.2f}")
